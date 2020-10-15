@@ -122,7 +122,7 @@ def flamesgame():
         p1_list=con_list[:star]
         p2_list=con_list[star+1:]
     count=len(p1_list)+len(p2_list)
-    reslt=["Friends","Lovers","Affection","Marriage","Enemies","Siblings"]
+    reslt=["Friends","Lovers","Arrange marriage","Marriage","Enemies","Siblings"]
     while len(reslt)>1:
         sp=(count%len(reslt)-1)
         if sp>=0:
@@ -209,6 +209,9 @@ if __name__ == "__main__":
         elif "did you know me" in querry or "my name" in querry:
             print("Yes your name is "+usern)
             speak("yes your name is "+usern) 
+	elif "how do you know me" in querry:
+	    print("I use your system username as your name)
+	    speak("I use your system username as your name)
         elif "thanks" in querry or "thank you" in querry:
             print("It's nothing, you are my friend dear")
             speak("It's nothing, you are my friend dear and it is my duty to make you happy")
@@ -302,6 +305,7 @@ if __name__ == "__main__":
             print("input the number using keyboard")
             speak("input the number using keyboard")
             h=input()
+	    os.system("cls")
             print("say exit to exit game mode during playing a game")
             speak("say exit to exit game mode during playing a game")
             if(h=="1"):
