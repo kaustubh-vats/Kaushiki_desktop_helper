@@ -18,7 +18,7 @@ def speak(text):
 
 def recognition():
     s=sr.Recognizer()
-    s.energy_threshold=600
+    s.energy_threshold=800
     with sr.Microphone() as source:
         print("Listening...")
         audio = s.listen(source)
@@ -209,9 +209,9 @@ if __name__ == "__main__":
         elif "did you know me" in querry or "my name" in querry:
             print("Yes your name is "+usern)
             speak("yes your name is "+usern) 
-	elif "how do you know me" in querry:
-	    print("I use your system username as your name)
-	    speak("I use your system username as your name)
+        elif "how do you know me" in querry:
+            print("I use your system username as your name")
+            speak("I use your system username as your name")
         elif "thanks" in querry or "thank you" in querry:
             print("It's nothing, you are my friend dear")
             speak("It's nothing, you are my friend dear and it is my duty to make you happy")
@@ -305,7 +305,7 @@ if __name__ == "__main__":
             print("input the number using keyboard")
             speak("input the number using keyboard")
             h=input()
-	    os.system("cls")
+            os.system("cls")
             print("say exit to exit game mode during playing a game")
             speak("say exit to exit game mode during playing a game")
             if(h=="1"):
