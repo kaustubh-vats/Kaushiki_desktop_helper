@@ -3,6 +3,7 @@ import pytube
 import wikipedia
 import os
 import random
+import pyaudio
 import datetime
 import webbrowser
 import speech_recognition as sr
@@ -255,7 +256,7 @@ if __name__ == "__main__":
             print("opening Instagram...")
             speak("Opening insta gram")
             webbrowser.open("https://instagram.com/")
-            speak("insta gram is here")
+            speak("Instagram is here")
             break
         elif "whatsapp" in querry:
             print("Opening Whatsapp...")
