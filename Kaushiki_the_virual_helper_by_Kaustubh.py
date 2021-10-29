@@ -26,22 +26,22 @@ def recognition():
 
     try:
         print("Recognizing.....")
-        print("please wait....")
+        print("Please wait....")
         query=s.recognize_google(audio, language='en-in')
         print(query)
         return query
     except Exception as e:
-        print("something went wrong while recognizing say that again please")
+        print("Something went wrong while recognizing say that again please.")
         print("Check your internet connection")
-        speak("check your internet connection")
+        speak("Check your internet connection")
         return "None"
 
 def copycatgame():
-    speak("speak any thing")
+    speak("Speak any thing")
     while True:
         repeat=recognition().lower()
         if "exit" in repeat:
-            speak("exiting game mode")
+            speak("Exiting game mode")
             break
         else:
             speak(repeat)
@@ -54,7 +54,7 @@ def tossgame():
         if "heads" in choose or "head" in choose:
             if(r==1):
                 print("Heads it is")
-                speak("head it is, you won")
+                speak("Head it is, you won")
             else:
                 print("Tails it is")
                 speak("tail it is, you loose")
@@ -70,7 +70,7 @@ def tossgame():
             break
         else:
             speak("don't cheat, choose either head or tail")
-            print("you said "+choose)
+            print("You said "+choose)
 
 def petalsgame():
     randno=int(random.randint(4,9))
@@ -247,7 +247,7 @@ if __name__ == "__main__":
                 speak("welcome to youtube")
                 break
         elif "facebook" in querry or "fb" in querry:
-            print("opening Facebook...")
+            print("Opening Facebook...")
             speak("Opening facebook")
             webbrowser.open("https://www.facebook.com/")
             speak("here is your f b requested page")
@@ -303,11 +303,11 @@ if __name__ == "__main__":
             print("4. copy cat")
             print("5. Love calculator")
             print("6. Flames")
-            print("input the number using keyboard")
+            print("Input the number using keyboard: ")
             speak("input the number using keyboard")
             h=input()
             os.system("cls")
-            print("say exit to exit game mode during playing a game")
+            print("Say exit to exit game mode during playing a game.")
             speak("say exit to exit game mode during playing a game")
             if(h=="1"):
                 speak("opening toss a coin game")
