@@ -16,7 +16,7 @@ It also have some humor too let say you said 'I love you' to the assistant it wi
 
 The websites will be opened in your default browser.
 
-- Instagram - It will open Instagram. <br>
+- Instagram - It will open Instagram in the browser (default one). <br>
 - WhatsApp - It will open Web Whatsapp. <br>
 - Video - It will ask which type of video you want and after listening to you it will open that in YouTube. <br>
 - Google - It will open Google. <br>
@@ -45,4 +45,4 @@ Open - After saying this you can say like 'open' and wait a second and then say 
 + speech-recognizer 
 
 ## Language :-
-- Python
+- Python (only)
